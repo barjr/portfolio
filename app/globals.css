@@ -89,6 +89,12 @@ a:hover {
   color: #8e8e8e;
 }
 
+#gradient~a[data-n],
+#gradient+a[data-n],
+#gradient~a[href="https://neat.firecms.co"] {
+  display: none !important;
+}
+
 .button-list button {
   display: inline-flex;
   align-items: center;
