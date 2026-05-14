@@ -39,6 +39,7 @@ app/
 	globals.css   global styles and layout rules
 	layout.tsx    root layout and font setup
 	Navbar.tsx    top navigation component
+	Hero.tsx      hero section component
 	page.tsx      home page entry point
 public/         static assets
 ```
