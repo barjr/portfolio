@@ -1,14 +1,18 @@
-@import "tailwindcss";
-@import "@heroui/styles";
+@import 'tailwindcss';
+@import '@heroui/styles';
 
 * {
   padding: 0;
   margin: 0;
-  color: #FAFAFA;
+  color: #fafafa;
+}
+
+html {
+  overflow: hidden;
 }
 
 :root {
-  --background: #ffffff;
+  --background: lab(1.54547 0.178337 -0.64671);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-roboto: var(--font-roboto);
@@ -16,14 +20,14 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #FAFAFA;
+    --background: lab(1.54547 0.178337 -0.64671);
+    --foreground: #fafafa;
   }
 }
 
 body {
   position: relative;
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
   font-family: var(--font-roboto), Arial, Helvetica, sans-serif;
 }
@@ -46,7 +50,7 @@ header {
   align-items: center;
   padding: 1rem;
   width: 100%;
-  background: rgba(10, 10, 10, 0.35);
+  background: var(--background);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
 }
@@ -89,12 +93,6 @@ a:hover {
   color: #8e8e8e;
 }
 
-#gradient~a[data-n],
-#gradient+a[data-n],
-#gradient~a[href="https://neat.firecms.co"] {
-  display: none !important;
-}
-
 .button-list button {
   display: inline-flex;
   align-items: center;
@@ -103,7 +101,9 @@ a:hover {
   background: transparent;
   color: inherit;
   cursor: pointer;
-  transition: color 0.2s ease, transform 0.2s ease;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .button-list button:hover {
