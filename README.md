@@ -6,6 +6,8 @@ A personal portfolio built with [Next.js](https://nextjs.org), [React](https://r
 
 This project is set up as a clean foundation for a personal site with a centered navigation layout, custom global styling, and room for hero, projects, skills, and contact sections.
 
+![Portfolio Screenshot](./public/Screenshot%202026-05-14%20at%206.13.14%20AM.png)
+
 ## Tech Stack
 
 - Next.js 16
