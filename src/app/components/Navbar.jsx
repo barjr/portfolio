@@ -4,15 +4,14 @@ import { FaLinkedin } from 'react-icons/fa';
 
 const Navbar = () => {
   return (
-    <header className='p-5'>
-      <nav className='flex justify-between align-middle text-xl'>
-        <h1><Link href={'/'}>brian.</Link></h1>
+    <header className='absolute top-2 z-10 mt-5 px-5 w-1/2'>
+      <nav className='flex justify-between align-middle bg-white/20  rounded-xl p-3 mx-auto'>
+        <h1>
+          <Link href={'/'}>brian.</Link>
+        </h1>
         <ul className='flex gap-3'>
           <li>
             <Link href='/'>projects</Link>
-          </li>
-          <li>
-            <Link href='/'>skills</Link>
           </li>
           <li>
             <Link href='/'>focus</Link>

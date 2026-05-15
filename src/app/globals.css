@@ -1,6 +1,21 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 * {
   color: white;
-  background-color: #08071a;
+}
+
+body {
+  background-color: black;
+}
+
+html {
+  font-family:
+    var(--font-roboto),
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial;
 }
