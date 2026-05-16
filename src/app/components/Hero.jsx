@@ -27,7 +27,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className='relative w-full min-h-screen overflow-hidden bg-black'>
+    <section className='relative w-full min-h-screen overflow-hidden bg-black z-10'>
       <div ref={shaderRef} className='absolute inset-0'>
         <Shader className='absolute inset-0'>
           <Plasma intensity={1.5} speed={3} density={1} colorA='#3c5ee4' />
@@ -36,7 +36,7 @@ const Hero = () => {
       <div className='relative z-10 flex min-h-screen items-center'>
         <div className='mx-auto w-full max-w-4xl px-6 py-24 text-left md:text-center'>
           <h1 className='text-5xl md:text-7xl font-extrabold'>
-            Hi — I&apos;m Brian.
+            Hey i&apos;m Brian.
           </h1>
           <p className='mt-4 text-lg md:text-2xl text-gray-200/90'>
             I build elegant front-end experiences and interactive visuals.
@@ -57,7 +57,7 @@ const Hero = () => {
           </div>
           <div className='mt-6 flex gap-4 justify-start md:justify-center'>
             <a
-              href='https://github.com/you'
+              href='https://github.com/barjr'
               aria-label='GitHub'
               className='text-white/90'
             >
