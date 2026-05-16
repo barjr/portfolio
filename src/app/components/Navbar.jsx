@@ -4,8 +4,8 @@ import { FaLinkedin } from 'react-icons/fa';
 
 const Navbar = () => {
   return (
-    <header className='absolute top-2 z-10 mt-5 px-5 w-1/2'>
-      <nav className='flex justify-between align-middle bg-white/20  rounded-xl p-3 mx-auto'>
+    <header className="absolute left-1/2 -translate-x-1/2 z-10 mt-5 px-5 w-1/2">
+      <nav className='flex justify-between align-middle bg-white/10 rounded-xl p-3 mx-auto'>
         <h1>
           <Link href={'/'}>brian.</Link>
         </h1>
@@ -22,10 +22,10 @@ const Navbar = () => {
         </ul>
         <div className='flex gap-3'>
           <button>
-            <FaGithub />
+            <FaGithub className='cursor-pointer' />
           </button>
           <button>
-            <FaLinkedin />
+            <FaLinkedin className='cursor-pointer' />
           </button>
         </div>
       </nav>
