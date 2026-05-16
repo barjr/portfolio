@@ -1,29 +1,24 @@
 # Portfolio
 
-Modern personal portfolio built with Next.js 16, React 19, Tailwind CSS v4, GSAP, and `shaders/react`.
+Personal portfolio built with Next.js, React and Tailwind CSS. The site uses a shader-driven hero, animated transitions, and minimal components so you can showcase projects and contact info quickly.
 
-## Overview
+## Features
 
-This project is a visually driven portfolio site designed to present a developer profile with a strong first impression. It combines a shader-based hero section, a clean navigation bar, and a project area that can be expanded into a full resume or case-study site.
-
-## Highlights
-
-- Animated shader hero with a GSAP fade-in to keep the load-in smooth.
-- Custom font loading with `next/font` for fast, consistent typography.
-- App Router layout structure that keeps metadata and server rendering aligned.
-- Built with Tailwind CSS v4 for quick, scalable styling.
-- Minimal component structure that is easy to extend for projects, skills, and contact sections.
+- Shader-based hero with GSAP entry animation
+- Responsive navbar and project cards
+- Tailwind CSS utility-first styling
+- Easy-to-extend component structure
 
 ## Tech Stack
 
-- Next.js 16.2
-- React 19
-- Tailwind CSS 4
+- Next.js (App Router)
+- React
+- Tailwind CSS
 - GSAP
 - shaders/react
 - react-icons
 
-## Getting Started
+## Quick Start
 
 Install dependencies:
 
@@ -37,20 +32,37 @@ Run the development server:
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Build for production:
+
+```bash
+npm run build
+npm run start
+```
+
+Open http://localhost:3000 in your browser.
 
 ## Project Structure
 
-```text
-src/app/
-	layout.js
-	globals.css
-	components/
-		Hero.jsx
-		Navbar.jsx
-		Projects.jsx
-```
+Key files:
 
-## Notes
+- `src/app/layout.js` — root layout and font setup
+- `src/app/globals.css` — global styles and Tailwind import
+- `src/app/components/Hero.jsx` — shader hero section
+- `src/app/components/Navbar.jsx` — top navigation
+- `src/app/components/Projects.jsx` — projects grid
 
-- The current build focuses on the landing experience and is ready for expansion into project cards, skills, and contact sections.
+## Development Notes
+
+- The hero uses `shaders/react`; ensure it is supported in your environment.
+- Sticky positioning can be affected by ancestor `overflow` or `transform` styles — remove those if `position: sticky` doesn't work as expected.
+- Global scrollbar hiding is implemented in `globals.css`; it hides the visual scrollbar while preserving scroll behavior.
+
+## Contributing
+
+1. Fork the repo
+2. Create a branch for your feature (`git checkout -b feat/awesome`)
+3. Open a pull request
+
+## License
+
+This repository is provided as-is. Add a license file if you want to publish or open-source the project.
