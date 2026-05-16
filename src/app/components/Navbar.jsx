@@ -1,6 +1,5 @@
 import Link from 'next/link';
-import { FaGithub } from 'react-icons/fa';
-import { FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Navbar = () => {
   return (
