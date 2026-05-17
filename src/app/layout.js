@@ -3,7 +3,9 @@ import './globals.css';
 import SiteBackground from './components/SiteBackground';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import Focus from './components/Focus';
 import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 const roboto = Roboto({
   variable: '--font-roboto',
@@ -22,7 +24,9 @@ export default function RootLayout() {
         <SiteBackground />
         <Navbar />
         <Hero />
+        <Focus />
         <Projects />
+        <Contact />
       </body>
     </html>
   );

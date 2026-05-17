@@ -52,7 +52,7 @@ const Projects = () => {
               className='group relative overflow-hidden rounded-3xl border border-white/10 bg-white/6 p-6 shadow-2xl shadow-black/20 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/10'
             >
               <div
-                className={`absolute inset-0 bg-gradient-to-br ${project.accent} opacity-0 transition duration-300 group-hover:opacity-100`}
+                className={`absolute inset-0 bg-linear-to-br ${project.accent} opacity-0 transition duration-300 group-hover:opacity-100`}
               />
               <div className='relative flex h-full flex-col'>
                 <div className='flex items-center justify-between gap-4 text-sm text-white/55'>

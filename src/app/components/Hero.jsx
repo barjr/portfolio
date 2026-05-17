@@ -16,15 +16,17 @@ const Hero = () => {
           <div className='mt-8 flex flex-col sm:flex-row gap-3 justify-center'>
             <a
               href='#projects'
-              className='px-6 py-3 bg-white/20 backdrop-blur-2xl text-black rounded-lg font-medium'
+              className='group relative overflow-hidden rounded-3xl border border-white/10 bg-white/6 px-6 py-3 font-medium text-white shadow-2xl shadow-black/20 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/10'
             >
-              View Projects
+              <span className='absolute inset-0 bg-linear-to-br from-white/20 via-white/10 to-transparent opacity-0 transition duration-300 group-hover:opacity-100' />
+              <span className='relative z-10'>View Projects</span>
             </a>
             <a
               href='/resume.pdf'
-              className='px-6 py-3 border border-white/30 rounded-lg text-white/90'
+              className='group relative overflow-hidden rounded-3xl border border-white/10 bg-black/20 px-6 py-3 font-medium text-white/90 shadow-2xl shadow-black/20 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/10'
             >
-              Download Resume
+              <span className='absolute inset-0 bg-linear-to-br from-sky-400/20 via-blue-400/10 to-transparent opacity-0 transition duration-300 group-hover:opacity-100' />
+              <span className='relative z-10'>Download Resume</span>
             </a>
           </div>
           <div className='mt-6 flex gap-4 justify-start md:justify-center'>

@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 const Navbar = () => {
   return (
     <header className='absolute left-1/2 -translate-x-1/2 z-100 mt-5 px-5 w-1/2'>
-      <nav className='flex justify-between items-center bg-white/10 rounded-xl p-3 mx-auto'>
+      <nav className='flex justify-between items-center bg-white/10 rounded-xl p-3 px-5 mx-auto'>
         <h1>
           <Link href={'/'}>brian.</Link>
         </h1>
@@ -31,7 +31,7 @@ const Navbar = () => {
           </Link>
 
           <a
-            href='https://www.linkedin.com/barjr'
+            href='https://linkedin.com/in/barjr'
             target='_blank'
             rel='noreferrer'
             aria-label='LinkedIn'
