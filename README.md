@@ -2,7 +2,11 @@
 
 Personal portfolio built with Next.js, React and Tailwind CSS. The site uses a shader-driven hero, animated transitions, and minimal components so you can showcase projects and contact info quickly.
 
+<img width="1912" height="1242" alt="Screenshot 2026-05-17 at 9 58 57 AM" src="https://github.com/user-attachments/assets/8b12171c-717e-4094-89a2-3a2bcb8f98fa" />
+
 ## Features
+
+
 
 - Shader-based hero with GSAP entry animation
 - Responsive navbar and project cards
