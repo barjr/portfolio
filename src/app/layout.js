@@ -1,5 +1,6 @@
 import { Roboto } from 'next/font/google';
 import './globals.css';
+import SiteBackground from './components/SiteBackground';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
@@ -17,7 +18,8 @@ export const metadata = {
 export default function RootLayout() {
   return (
     <html lang='en' className={`${roboto.variable} h-full antialiased`}>
-      <body className='min-h-full flex flex-col'>
+      <body className='relative isolate min-h-full flex flex-col overflow-x-hidden bg-black text-white'>
+        <SiteBackground />
         <Navbar />
         <Hero />
         <Projects />

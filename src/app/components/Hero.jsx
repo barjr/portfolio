@@ -1,45 +1,17 @@
 'use client';
-import { useEffect, useRef } from 'react';
-import gsap from 'gsap';
-import { Shader, Plasma } from 'shaders/react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Hero = () => {
-  const shaderRef = useRef(null);
-
-  useEffect(() => {
-    const element = shaderRef.current;
-
-    if (!element) return;
-
-    gsap.set(element, { autoAlpha: 0 });
-
-    const animation = gsap.to(element, {
-      autoAlpha: 1,
-      duration: 1.5,
-      delay: 0.75,
-      ease: 'power2.out',
-    });
-
-    return () => {
-      animation.kill();
-    };
-  }, []);
-
   return (
-    <section className='relative w-full min-h-screen overflow-hidden bg-black z-10'>
-      <div ref={shaderRef} className='absolute inset-0'>
-        <Shader className='absolute inset-0'>
-          <Plasma intensity={1.5} speed={3} density={1} colorA='#3c5ee4' />
-        </Shader>
-      </div>
+    <section className='relative z-10 w-full min-h-screen overflow-hidden bg-transparent'>
       <div className='relative z-10 flex min-h-screen items-center'>
         <div className='mx-auto w-full max-w-4xl px-6 py-24 text-left md:text-center'>
           <h1 className='text-5xl md:text-7xl font-extrabold'>
-            Hey i&apos;m Brian.
+            Welcome, I am Brian
           </h1>
           <p className='mt-4 text-lg md:text-2xl text-gray-200/90'>
-            I build elegant front-end experiences and interactive visuals.
+            I&apos;m a full stack engineer building elegant products and
+            interactive visuals.
           </p>
           <div className='mt-8 flex flex-col sm:flex-row gap-3 justify-center'>
             <a

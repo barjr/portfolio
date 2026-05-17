@@ -10,7 +10,7 @@ const Navbar = () => {
         </h1>
         <ul className='flex gap-3'>
           <li>
-            <Link href='/'>projects</Link>
+            <Link href='#projects'>projects</Link>
           </li>
           <li>
             <Link href='/'>focus</Link>
