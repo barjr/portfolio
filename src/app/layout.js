@@ -6,6 +6,7 @@ import Hero from './components/Hero';
 import Focus from './components/Focus';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
+import BackToTop from './components/BackToTop';
 
 const roboto = Roboto({
   variable: '--font-roboto',
@@ -27,6 +28,7 @@ export default function RootLayout() {
         <Focus />
         <Projects />
         <Contact />
+        <BackToTop />
       </body>
     </html>
   );

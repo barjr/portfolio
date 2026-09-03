@@ -1,5 +1,13 @@
 'use client';
 
+import {
+  FaClock,
+  FaEnvelope,
+  FaLinkedin,
+  FaMapMarkerAlt,
+  FaRocket,
+} from 'react-icons/fa';
+
 const Contact = () => {
   return (
     <section
@@ -22,21 +30,23 @@ const Contact = () => {
 
         <div className='mt-12 flex flex-col sm:flex-row gap-6 justify-center items-center'>
           <a
-            href='mailto:your.email@example.com'
+            href='mailto:barjrwork@gmail.com'
             className='group relative overflow-hidden rounded-3xl border border-white/10 bg-white/6 px-8 py-4 font-medium text-white shadow-2xl shadow-black/20 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/10'
           >
             <span className='absolute inset-0 bg-linear-to-br from-white/20 via-white/10 to-transparent opacity-0 transition duration-300 group-hover:opacity-100' />
             <span className='relative z-10 flex items-center gap-2'>
-              📧 Send an Email
+              <FaEnvelope aria-hidden='true' />
+              Send an Email
             </span>
           </a>
           <a
-            href='https://linkedin.com/in/you'
-            className='group relative overflow-hidden rounded-3xl border border-white/10 bg-black/20 px-8 py-4 font-medium text-white/90 shadow-2xl shadow-black/20 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/10'
+            href='https://linkedin.com/in/barjr'
+            className='group relative overflow-hidden rounded-3xl border border-white/10 bg-white/6 px-8 py-4 font-medium text-white/90 shadow-2xl shadow-black/20 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/10'
           >
             <span className='absolute inset-0 bg-linear-to-br from-sky-400/20 via-blue-400/10 to-transparent opacity-0 transition duration-300 group-hover:opacity-100' />
             <span className='relative z-10 flex items-center gap-2'>
-              💼 LinkedIn
+              <FaLinkedin aria-hidden='true' />
+              LinkedIn
             </span>
           </a>
         </div>
@@ -45,7 +55,10 @@ const Contact = () => {
           <div className='group relative overflow-hidden rounded-3xl border border-white/10 bg-white/6 p-8 shadow-2xl shadow-black/20 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/10 text-center'>
             <div className='absolute inset-0 bg-linear-to-br from-white/10 via-white/5 to-transparent opacity-0 transition duration-300 group-hover:opacity-100' />
             <div className='relative z-10'>
-              <div className='text-3xl mb-3'>📍</div>
+              <FaMapMarkerAlt
+                className='mx-auto mb-3 text-3xl text-sky-300'
+                aria-hidden='true'
+              />
               <h3 className='text-lg font-semibold text-white'>Location</h3>
               <p className='mt-2 text-sm text-white/60'>
                 Available for remote and local opportunities
@@ -56,7 +69,10 @@ const Contact = () => {
           <div className='group relative overflow-hidden rounded-3xl border border-white/10 bg-white/6 p-8 shadow-2xl shadow-black/20 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/10 text-center'>
             <div className='absolute inset-0 bg-linear-to-br from-white/10 via-white/5 to-transparent opacity-0 transition duration-300 group-hover:opacity-100' />
             <div className='relative z-10'>
-              <div className='text-3xl mb-3'>⏱️</div>
+              <FaClock
+                className='mx-auto mb-3 text-3xl text-sky-300'
+                aria-hidden='true'
+              />
               <h3 className='text-lg font-semibold text-white'>
                 Response Time
               </h3>
@@ -69,7 +85,10 @@ const Contact = () => {
           <div className='group relative overflow-hidden rounded-3xl border border-white/10 bg-white/6 p-8 shadow-2xl shadow-black/20 backdrop-blur-xl transition duration-300 hover:-translate-y-1 hover:border-white/20 hover:bg-white/10 text-center'>
             <div className='absolute inset-0 bg-linear-to-br from-white/10 via-white/5 to-transparent opacity-0 transition duration-300 group-hover:opacity-100' />
             <div className='relative z-10'>
-              <div className='text-3xl mb-3'>🚀</div>
+              <FaRocket
+                className='mx-auto mb-3 text-3xl text-sky-300'
+                aria-hidden='true'
+              />
               <h3 className='text-lg font-semibold text-white'>Availability</h3>
               <p className='mt-2 text-sm text-white/60'>
                 Open to new projects and opportunities

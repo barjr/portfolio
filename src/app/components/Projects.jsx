@@ -3,7 +3,7 @@ const projects = [
     title: 'Interactive Portfolio',
     year: '2026',
     description:
-      'A shader-driven portfolio that blends motion, depth, and clean content layout into a single fast page.',
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum itaque, et sequi optio debitis sapiente at mollitia voluptates alias perspiciatis repudiandae magni quidem neque incidunt, minima sint! Consectetur, laboriosam illo!',
     tags: ['Next.js', 'GSAP', 'shaders/react'],
     accent: 'from-sky-400/25 via-blue-400/10 to-transparent',
   },
@@ -11,23 +11,23 @@ const projects = [
     title: 'Design System Refresh',
     year: '2026',
     description:
-      'A visual refresh focused on clearer hierarchy, reusable UI blocks, and stronger contrast across sections.',
-    tags: ['UI', 'Tailwind', 'Accessibility'],
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum itaque, et sequi optio debitis sapiente at mollitia voluptates alias perspiciatis repudiandae magni quidem neque incidunt, minima sint! Consectetur, laboriosam illo!',
+    tags: ['UI', 'Tailwind', 'Accessibility', 'Docker', 'SQL'],
     accent: 'from-cyan-400/20 via-slate-400/10 to-transparent',
   },
   {
     title: 'Performance Tuning',
     year: '2026',
     description:
-      'A refactor pass that keeps the experience lightweight while preserving the animated background effect.',
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum itaque, et sequi optio debitis sapiente at mollitia voluptates alias perspiciatis repudiandae magni quidem neque incidunt, minima sint! Consectetur, laboriosam illo!',
     tags: ['Performance', 'App Router', 'Motion'],
     accent: 'from-indigo-400/25 via-violet-400/10 to-transparent',
   },
   {
-    title: 'Performance Tuning',
+    title: 'Skill Based Matchmaking',
     year: '2026',
     description:
-      'A refactor pass that keeps the experience lightweight while preserving the animated background effect.',
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum itaque, et sequi optio debitis sapiente at mollitia voluptates alias perspiciatis repudiandae magni quidem neque incidunt, minima sint! Consectetur, laboriosam illo!',
     tags: ['Performance', 'App Router', 'Motion'],
     accent: 'from-indigo-400/25 via-violet-400/10 to-transparent',
   },
@@ -42,14 +42,7 @@ const Projects = () => {
       <div className='mx-auto w-full max-w-6xl px-6'>
         <div className='max-w-2xl'>
           <p className='text-sm uppercase tracking-[0.35em] text-white/60'>
-            Selected Work
-          </p>
-          <h2 className='mt-4 text-4xl font-semibold tracking-tight text-white sm:text-5xl'>
-            Projects built to feel polished, fast, and deliberate.
-          </h2>
-          <p className='mt-5 text-base leading-7 text-white/75 sm:text-lg'>
-            This section is set up to showcase a few featured pieces with enough
-            breathing room to tell the story behind each one.
+            Previous Work
           </p>
         </div>
 
