@@ -23,6 +23,14 @@ const projects = [
     tags: ['Performance', 'App Router', 'Motion'],
     accent: 'from-indigo-400/25 via-violet-400/10 to-transparent',
   },
+  {
+    title: 'Performance Tuning',
+    year: '2026',
+    description:
+      'A refactor pass that keeps the experience lightweight while preserving the animated background effect.',
+    tags: ['Performance', 'App Router', 'Motion'],
+    accent: 'from-indigo-400/25 via-violet-400/10 to-transparent',
+  },
 ];
 
 const Projects = () => {

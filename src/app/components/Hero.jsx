@@ -1,7 +1,21 @@
 'use client';
+import { useEffect, useState } from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 const Hero = () => {
+  const [showScrollCue, setShowScrollCue] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollCue(window.scrollY === 0);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <section className='relative z-10 w-full min-h-screen overflow-hidden bg-transparent'>
       <div className='relative z-10 flex min-h-screen items-center'>
@@ -46,7 +60,10 @@ const Hero = () => {
             </a>
           </div>
         </div>
-        <div className='absolute bottom-6 left-1/2 -translate-x-1/2 text-white/80'>
+        <div
+          className={`absolute bottom-6 left-1/2 -translate-x-1/2 text-white/80 transition-opacity duration-300 ${showScrollCue ? 'opacity-100' : 'pointer-events-none opacity-0'}`}
+          aria-hidden={!showScrollCue}
+        >
           <div className='flex flex-col items-center'>
             <span className='mb-1 text-sm'>Scroll</span>
             <svg
