@@ -21,7 +21,7 @@ const Hero = () => {
       <div className='relative z-10 flex min-h-screen items-center'>
         <div className='mx-auto w-full max-w-4xl px-6 py-24 text-left md:text-center'>
           <h1 className='text-5xl md:text-7xl font-extrabold'>
-            Welcome, I am Brian
+            Brian
           </h1>
           <p className='mt-4 text-lg md:text-2xl text-gray-200/90'>
             I&apos;m a full stack engineer building elegant products and

@@ -2,27 +2,27 @@ import { FaBolt, FaCodeBranch, FaLightbulb, FaSitemap } from 'react-icons/fa';
 
 const focusAreas = [
   {
-    title: 'Performance & Optimization',
+    title: 'Performance Engineering',
     description:
-      'Building fast, efficient applications that prioritize user experience and minimize computational waste across all layers.',
+      'Designing responsive, efficient applications with measured performance across the frontend, backend, and delivery pipeline.',
     icon: FaBolt,
   },
   {
-    title: 'Clean Architecture',
+    title: 'Scalable Architecture',
     description:
-      'Crafting maintainable, scalable code with clear separation of concerns and thoughtful API design.',
+      'Establishing clear boundaries, dependable APIs, and maintainable systems that support long-term product growth.',
     icon: FaSitemap,
   },
   {
-    title: 'Interactive Experiences',
+    title: 'Product Experiences',
     description:
-      'Creating engaging user interfaces with deliberate motion, smooth interactions, and responsive feedback.',
+      'Building accessible interfaces with purposeful motion, intuitive interactions, and feedback that keeps users oriented.',
     icon: FaLightbulb,
   },
   {
-    title: 'Full Stack Development',
+    title: 'End-to-End Delivery',
     description:
-      'End-to-end ownership from database design through frontend polish, ensuring cohesive product delivery.',
+      'Taking ownership from data modeling and service design through frontend implementation, testing, and refinement.',
     icon: FaCodeBranch,
   },
 ];
@@ -36,14 +36,14 @@ const Focus = () => {
       <div className='mx-auto w-full max-w-6xl px-6'>
         <div className='max-w-2xl'>
           <p className='text-sm uppercase tracking-[0.35em] text-white/60'>
-            What Drives Me
+            Engineering Focus
           </p>
           <h2 className='mt-4 text-4xl font-semibold tracking-tight text-white sm:text-5xl'>
-            My focus as an engineer.
+            Building software with lasting value.
           </h2>
           <p className='mt-5 text-base leading-7 text-white/75 sm:text-lg'>
-            These are the principles that guide my work and the areas where I
-            invest my energy to create meaningful impact.
+            I combine technical rigor with product thinking to deliver digital
+            experiences that are reliable, maintainable, and effective.
           </p>
         </div>
 
