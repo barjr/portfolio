@@ -43,7 +43,7 @@ const Hero = () => {
               <span className='relative z-10'>Download Resume</span>
             </a>
           </div>
-          <div className='mt-6 flex gap-4 justify-start md:justify-center'>
+          {/* <div className='mt-6 flex gap-4 justify-start md:justify-center'>
             <a
               href='https://github.com/barjr'
               aria-label='GitHub'
@@ -58,7 +58,7 @@ const Hero = () => {
             >
               <FaLinkedin />
             </a>
-          </div>
+          </div> */}
         </div>
         <div
           className={`absolute bottom-6 left-1/2 -translate-x-1/2 text-white/80 transition-opacity duration-300 ${showScrollCue ? 'opacity-100' : 'pointer-events-none opacity-0'}`}
