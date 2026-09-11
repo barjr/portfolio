@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import logo from '../public/anakin.jpg';
 import github from '../public/github.png';
+import { ShimmerButton } from '@/components/ui/shimmer-button';
 
 const Header = () => {
   return (
@@ -17,8 +18,11 @@ const Header = () => {
         </Link>
       </div>
 
-      <nav aria-label='Main Navigation' className='flex items-center'>
-        <ul className='flex items-center gap-3'>
+      <nav
+        aria-label='Main Navigation'
+        className='rounded-full border border-white/10 bg-black/5 px-4 py-2 backdrop-blur-sm'
+      >
+        <ul className='flex items-center gap-5'>
           <li>
             <a href='#about'>About</a>
           </li>
@@ -39,7 +43,9 @@ const Header = () => {
             alt='Github Link'
           ></Image>
         </a>
-        <a href=''>Contact</a>
+        <Link href='/'>
+          <ShimmerButton className='h-10'>Contact</ShimmerButton>
+        </Link>
       </div>
     </header>
   );
