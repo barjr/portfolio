@@ -5,7 +5,7 @@ import github from '../public/github.png';
 
 const Header = () => {
   return (
-    <header className='flex justify-between items-center'>
+    <header className='fixed flex justify-between items-center top-0 w-full max-w-7xl'>
       <div className='logo'>
         <Link href='/'>
           <Image

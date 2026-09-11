@@ -2,7 +2,7 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <div>Hero</div>
+    <img src="example.com/apple" alt="" />
   )
 }
 
