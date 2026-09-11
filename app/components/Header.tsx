@@ -5,13 +5,13 @@ import github from '../public/github.png';
 
 const Header = () => {
   return (
-    <header className='fixed flex justify-between items-center top-5 w-full max-w-7xl'>
+    <header className='fixed top-5 z-20 flex w-full max-w-7xl items-center justify-between'>
       <div className='logo'>
         <Link href='/'>
           <Image
             src={logo}
             loading='eager'
-            className='block w-10 h-10'
+            className='block w-15 h-15'
             alt='Logo'
           ></Image>
         </Link>
