@@ -18,8 +18,8 @@ const About = () => {
           <p className='max-w-2xl text-xl leading-relaxed text-zinc-300'>
             I am a full-stack software engineer who enjoys turning ideas into
             working products. I love exploring different kinds of software and
-            working across the stack, with a particular interest in TypeScript
-            and Python.
+            working across the stack, with a particular interest in React,
+            Python, and Typescript.
           </p>
 
           <div className='grid gap-8 border-t border-zinc-800 pt-8 sm:grid-cols-3'>
@@ -44,7 +44,16 @@ const About = () => {
           </div>
 
           <div className='flex flex-wrap gap-3'>
-            {['Python', 'Next.js', 'TypeScript', 'Java'].map((skill) => (
+            {[
+              'Python',
+              'TypeScript',
+              'React',
+              'Java',
+              'C++',
+              'Sql',
+              'Next.js',
+              'Flutter',
+            ].map((skill) => (
               <span
                 key={skill}
                 className='border border-zinc-700 px-4 py-2 text-sm text-zinc-300'

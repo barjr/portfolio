@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <header className='fixed top-5 z-20 flex w-full max-w-7xl items-center justify-between'>
       <div className='logo'>
-        <Link href='/'>
+        <Link href='#logo'>
           <Image
             src={logo}
             loading='eager'
@@ -24,13 +24,20 @@ const Header = () => {
       >
         <ul className='flex items-center gap-5'>
           <li>
-            <a href='#about'>About</a>
+            <a
+              className='text-zinc-500 hover:text-white transition-all'
+              href='#about'
+            >
+              About
+            </a>
           </li>
           <li>
-            <a href='#services'>Skills</a>
-          </li>
-          <li>
-            <a href='#contact'>Projects</a>
+            <a
+              className='text-zinc-500 hover:text-white transition-all'
+              href='#projects'
+            >
+              Projects
+            </a>
           </li>
         </ul>
       </nav>
