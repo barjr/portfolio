@@ -6,13 +6,13 @@ import { ShimmerButton } from '@/components/ui/shimmer-button';
 
 const Header = () => {
   return (
-    <header className='fixed top-5 z-20 flex w-full max-w-7xl items-center justify-between'>
+    <header className='fixed inset-x-4 top-4 z-20 mx-auto grid w-auto max-w-7xl grid-cols-[minmax(0,1fr)_auto_minmax(0,1fr)] items-center gap-2 sm:top-5 sm:gap-4'>
       <div className='logo'>
         <Link href='#logo'>
           <Image
             src={logo}
             loading='eager'
-            className='block w-15 h-15'
+            className='block h-12 w-12 sm:h-15 sm:w-15'
             alt='Logo'
           ></Image>
         </Link>
@@ -20,12 +20,12 @@ const Header = () => {
 
       <nav
         aria-label='Main Navigation'
-        className='rounded-full border border-white/10 bg-black/5 px-4 py-2 backdrop-blur-sm'
+        className='rounded-full border border-white/10 bg-black/5 px-2 py-1 backdrop-blur-sm sm:px-4 sm:py-2'
       >
-        <ul className='flex items-center gap-5'>
+        <ul className='flex items-center gap-3 sm:gap-5'>
           <li>
             <a
-              className='text-zinc-500 hover:text-white transition-all'
+              className='text-xs text-zinc-500 transition-all hover:text-white sm:text-base'
               href='#about'
             >
               About
@@ -33,7 +33,7 @@ const Header = () => {
           </li>
           <li>
             <a
-              className='text-zinc-500 hover:text-white transition-all'
+              className='text-xs text-zinc-500 transition-all hover:text-white sm:text-base'
               href='#projects'
             >
               Projects
@@ -41,17 +41,19 @@ const Header = () => {
           </li>
         </ul>
       </nav>
-      <div className='flex items-center gap-3'>
+      <div className='flex items-center justify-self-end gap-2 sm:gap-3'>
         <a href='https://github.com/barjr'>
           <Image
             src={github}
-            className='block w-10 h-10'
+            className='block h-8 w-8 sm:h-10 sm:w-10'
             loading='eager'
             alt='Github Link'
           ></Image>
         </a>
-        <Link href='/'>
-          <ShimmerButton className='h-10'>Contact</ShimmerButton>
+        <Link href='#contact'>
+          <ShimmerButton className='h-9 px-3 py-2 text-sm sm:h-10 sm:px-6 sm:py-3'>
+            Contact
+          </ShimmerButton>
         </Link>
       </div>
     </header>
