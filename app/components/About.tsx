@@ -2,7 +2,7 @@ const About = () => {
   return (
     <section
       id='about'
-      className='relative flex min-h-screen items-center bg-black px-6 py-24 text-white lg:px-16'
+      className='relative flex h-screen items-center bg-black px-6 py-24 text-white lg:px-16'
     >
       <div className='mx-auto grid w-full max-w-6xl gap-16 lg:grid-cols-[0.8fr_1.2fr] lg:items-start'>
         <div>
