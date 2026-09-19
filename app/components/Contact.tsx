@@ -36,7 +36,7 @@ const Contact = () => {
               GitHub <span aria-hidden='true'>↗</span>
             </a>
             <a
-              href='https://www.linkedin.com/barjr'
+              href='https://www.linkedin.com/in/barjr/'
               className='text-zinc-400 transition-colors hover:text-white'
             >
               LinkedIn <span aria-hidden='true'>↗</span>
