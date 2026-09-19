@@ -1,24 +1,17 @@
 const projects = [
   {
-    title: 'Project name',
-    description: 'A short description of the problem this project solves.',
-    technologies: ['Technology', 'Technology', 'Technology'],
-    liveUrl: '#',
-    sourceUrl: '#',
+    title: 'ResQ',
+    description:
+      'ResQ is a smart alert system that lets event attendees request emergency help with one tap. Responders and bystanders receive real-time alerts with geolocation, descriptions, and severity guidance, improving coordination and response times.',
+    technologies: ['Dart', 'C++', 'Javascript', 'Flutter'],
+    sourceUrl: 'https://github.com/barjr/ResQ',
   },
   {
-    title: 'Project name',
-    description: 'Explain what you built and what makes this project useful.',
+    title: 'Under Construction',
+    description: 'TBD',
     technologies: ['Technology', 'Technology', 'Technology'],
     liveUrl: '#',
-    sourceUrl: '#',
-  },
-  {
-    title: 'Project name',
-    description: 'Add the key result, feature, or lesson from this project.',
-    technologies: ['Technology', 'Technology', 'Technology'],
-    liveUrl: '#',
-    sourceUrl: '#',
+    sourceUrl: '#', // Conditional Rendered
   },
 ];
 
@@ -71,12 +64,14 @@ const Projects = () => {
               </div>
 
               <div className='mt-8 flex gap-5 border-t border-zinc-800 pt-5 text-sm'>
-                <a
-                  href={project.liveUrl}
-                  className='text-zinc-200 hover:text-white'
-                >
-                  Live site <span aria-hidden='true'>↗</span>
-                </a>
+                {project.liveUrl && (
+                  <a
+                    href={project.liveUrl}
+                    className='text-zinc-200 hover:text-white'
+                  >
+                    Live site <span aria-hidden='true'>↗</span>
+                  </a>
+                )}
                 <a
                   href={project.sourceUrl}
                   className='text-zinc-400 hover:text-white'
