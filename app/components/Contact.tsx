@@ -21,7 +21,7 @@ const Contact = () => {
               I&apos;d love to hear from you.
             </p>
             <a
-              href='mailto:hello@brian.dev'
+              href='mailto:barjrwork@gmail.com'
               className='mt-8 inline-block border-b border-zinc-500 pb-2 text-2xl text-white transition-colors hover:border-white hover:text-zinc-300 sm:text-3xl'
             >
               barjrwork@gmail.com <span aria-hidden='true'>↗</span>
